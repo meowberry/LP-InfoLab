@@ -126,3 +126,45 @@ p {
 .section2 {
   float: left;
 }
+
+/*footer*/
+.page-footer {
+  padding: 50px 0;
+  background-color: #272a34;
+  color: #9b8c89;
+}
+
+.page-footer a {
+  margin-left: 56px;
+  color: inherit;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.footer-email {
+  padding-left: 30px;
+  background-image: url("../img/icon-email-footer.svg");
+}
+
+.footer-phone {
+  padding-left: 25px;
+  background-image: url("../img/icon-phone-footer.svg");
+}
+
+
+.list-unstyled {
+  list-style-type: none;
+  font-size: 24px;
+  padding-left: 0;
+  border: 0;
+}
+
+.page-footer h3 {
+  padding-left: 50px;
+  font-size: 26px;
+}
+
+.row-footer {
+  display: flex;
+}
