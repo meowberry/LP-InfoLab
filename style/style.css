@@ -127,6 +127,20 @@ p {
   float: left;
 }
 
+
+/*Section-team*/
+.row-team {
+  display: flex;
+  vertical-align: top;
+  
+  padding: 0 0px;
+}
+
+.row-team .container {
+  margin-left: 0;
+  margin-right: 140px;
+}
+
 /*footer*/
 .page-footer {
   padding: 50px 0;
