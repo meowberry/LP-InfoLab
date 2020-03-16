@@ -1,13 +1,15 @@
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", "Inter", sans-serif;
+  font-weight: 300;
 
   font-size: 40px;
   color: #474747;
-  line-height: 50px;
+  line-height: 1.5;
 }
 h3 {
   color: #9b8c89;
+  font-size: 60px;
 }
 
 h1,
@@ -15,11 +17,11 @@ h2,
 h3,
 h4 {
   margin: 0;
+  line-height: 2;
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   height: 500px;
 }
 
@@ -34,6 +36,49 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.container p {
+  width: 500px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/*Button up*/
+#button {
+  display: inline-block;
+  background-color: #9b8c89;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 35px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*Intro*/
@@ -53,7 +98,11 @@ p {
   font-weight: 500;
   font-size: 213px;
   margin-top: 20px;
-  line-height: 1.2;
+  line-height: 1;
+}
+
+.intro__suptitle {
+  margin-left: 20px;
 }
 
 .intro__inner {
@@ -110,7 +159,8 @@ p {
 
 /*section*/
 .section__header {
-  margin: 150px auto;
+  margin: 50px auto;
+  font-weight: 300;
 }
 
 .section1 {
@@ -127,18 +177,27 @@ p {
   float: left;
 }
 
+/*Section-projects*/
+
+.section-projects {
+  background-color: #ebebeb;
+}
 
 /*Section-team*/
 .row-team {
   display: flex;
   vertical-align: top;
-  
+
   padding: 0 0px;
 }
 
 .row-team .container {
   margin-left: 0;
   margin-right: 140px;
+}
+
+.row-team p {
+  text-align: center;
 }
 
 /*footer*/
@@ -165,7 +224,6 @@ p {
   padding-left: 25px;
   background-image: url("../img/icon-phone-footer.svg");
 }
-
 
 .list-unstyled {
   list-style-type: none;
