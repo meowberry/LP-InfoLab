@@ -167,14 +167,14 @@ p {
   float: right;
 }
 
+.section2 {
+  float: left;
+}
+
 .section__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.section2 {
-  float: left;
 }
 
 /*Section-projects*/
@@ -186,18 +186,18 @@ p {
 /*Section-team*/
 .row-team {
   display: flex;
-  vertical-align: top;
 
   padding: 0 0px;
 }
 
 .row-team .container {
   margin-left: 0;
-  margin-right: 140px;
+  margin-right: 70px;
 }
 
 .row-team p {
   text-align: center;
+  width: 400px;
 }
 
 /*footer*/
